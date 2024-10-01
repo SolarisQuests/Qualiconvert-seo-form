@@ -22,10 +22,10 @@ const Step1 = ({ formData, updateFormData, nextStep, prevStep }) => {
     return emailRegex.test(email);
   };
 
-  const validateZip = (zip) => {
-    const zipRegex = /^\d{5}(-\d{4})?$/;
-    return zipRegex.test(zip);
-  };
+  // const validateZip = (zip) => {
+  //   const zipRegex = /^\d{5}(-\d{4})?$/;
+  //   return zipRegex.test(zip);
+  // };
 
   const validateState = (state) => {
     const stateRegex = /^[A-Z]{2}$/;
@@ -40,12 +40,12 @@ const Step1 = ({ formData, updateFormData, nextStep, prevStep }) => {
       newErrors.businessEmail = "Please enter a valid email address";
     }
 
-    if (!validateZip(zip)) {
-      newErrors.zip = "Please enter a valid US ZIP code";
-    }
+    // if (!validateZip(zip)) {
+    //   newErrors.zip = "Please enter a valid UK ZIP code";
+    // }
 
     if (!validateState(state)) {
-      newErrors.state = "Please enter a valid 2-letter US state code";
+      newErrors.state = "Please enter a valid 2-letter UK state code";
     }
 
     if (Object.keys(newErrors).length === 0) {
@@ -157,7 +157,7 @@ const Step1 = ({ formData, updateFormData, nextStep, prevStep }) => {
               id="state"
               value={state}
               onChange={(e) => setState(e.target.value.toUpperCase())}
-              placeholder="Enter state (e.g. CA)"
+              placeholder="Enter state"
               maxLength={2}
               required
             />
