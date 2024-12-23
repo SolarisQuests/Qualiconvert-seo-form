@@ -87,7 +87,7 @@ const FormWizard = () => {
       <div className="w-full lg:w-1/4 bg-blue-600 text-white p-4 lg:p-8 flex flex-col">
         <div className="mb-6 lg:mb-12">
           <img src='/QualityConvertlogo.png' alt="Qualiconvert Logo" className="h-[35px] mb-5" />
-          <h2 className="text-lg font-semibold">Onboarding Form</h2>
+          <h2 className="text-lg font-semibold">SEO Form</h2>
         </div>
         <ProgressTracker currentStep={currentStep} />
         <div className="mt-auto pt-8 text-xs lg:text-sm text-blue-200">
