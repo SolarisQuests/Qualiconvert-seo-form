@@ -45,7 +45,7 @@ const FormWizard = () => {
         return;
       }
 
-      const response = await fetch('https://qualiconvert-seo-server.onrender.com/api/submit-form', {
+      const response = await fetch('https://qualiconvert-seo-server.vercel.app/api/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
